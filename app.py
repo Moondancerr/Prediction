@@ -12,7 +12,7 @@ DATA_URL = "https://raw.githubusercontent.com/selva86/datasets/master/StudentsPe
 
 @st.cache_data(show_spinner=False)
 def load_data():
-    data = pd.read_csv(DATA_URL)
+    data = pd.read_csv('StudentsPerformance.csv')
     return data
 
 data = load_data()
